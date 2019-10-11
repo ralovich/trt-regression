@@ -1,0 +1,333 @@
+Found 1 possible inputs: (name=input_1_100_100_100_1, type=float(1), shape=[1,100,100,100,1]) 
+No variables spotted.
+Found 1 possible outputs: (name=inception_v3_3d_1/output/sub_1, op=Sub) 
+Found 2371795 (2.37M) const parameters, 0 (0) variable parameters, and 0 control_edges
+Op types used: 115 Const, 50 Identity, 48 Mul, 33 Add, 18 Relu, 18 Sub, 17 Conv3D, 16 Rsqrt, 4 StridedSlice, 2 AvgPool3D, 2 ConcatV2, 1 MaxPool3D, 1 Placeholder, 1 RealDiv
+To use with tensorflow/tools/benchmark:benchmark_model try these arguments:
+bazel run tensorflow/tools/benchmark:benchmark_model -- --graph=model_100.pb --show_flops --input_layer=input_1_100_100_100_1 --input_layer_type=float --input_layer_shape=1,100,100,100,1 --output_layer=inception_v3_3d_1/output/sub_1
+inception_v3_3d_1/output/sub_1/x (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/output/sub/x (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/concat/axis (Const): [], value=Tensor<type: int32 shape: [] values: 4>
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice/stack_2 (Const): [], value=Tensor<type: int32 shape: [5] values: 1 1 1...>
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice/stack_1 (Const): [], value=Tensor<type: int32 shape: [5] values: 0 -1 -1...>
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice/stack (Const): [], value=Tensor<type: int32 shape: [5] values: 0 1 1...>
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice/stack_2 (Const): [], value=Tensor<type: int32 shape: [5] values: 1 1 1...>
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice/stack_1 (Const): [], value=Tensor<type: int32 shape: [5] values: 0 -2 -2...>
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice/stack (Const): [], value=Tensor<type: int32 shape: [5] values: 0 2 2...>
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/concat/axis (Const): [], value=Tensor<type: int32 shape: [] values: 4>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice/stack_2 (Const): [], value=Tensor<type: int32 shape: [5] values: 1 1 1...>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice/stack_1 (Const): [], value=Tensor<type: int32 shape: [5] values: 0 -1 -1...>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice/stack (Const): [], value=Tensor<type: int32 shape: [5] values: 0 1 1...>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice/stack_2 (Const): [], value=Tensor<type: int32 shape: [5] values: 1 1 1...>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice/stack_1 (Const): [], value=Tensor<type: int32 shape: [5] values: 0 -2 -2...>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice/stack (Const): [], value=Tensor<type: int32 shape: [5] values: 0 2 2...>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/full_conv/Conv/batchnorm/sub/x (Const): [], value=Tensor<type: float shape: [] values: 0>
+inception_v3_3d_1/full_conv/Conv/batchnorm/mul/y (Const): [], value=Tensor<type: float shape: [] values: 1>
+inception_v3_3d_1/full_conv/Conv/batchnorm/add/y (Const): [], value=Tensor<type: float shape: [] values: 1e-06>
+inception_v3_3d_1/full_conv/truediv/y (Const): [], value=Tensor<type: float shape: [] values: 1000>
+input_1_100_100_100_1 (Placeholder): []
+inception_v3_3d_1/full_conv/truediv (RealDiv): [input_1_100_100_100_1, inception_v3_3d_1/full_conv/truediv/y]
+inception_v3_3d/output/Conv/output_bias (Const): [], value=Tensor<type: float shape: [1,1,1,1,2] values: [[[[-0.000244519062 -0.000223406474]]]]>
+inception_v3_3d/output/Conv/output_bias/read (Identity): [inception_v3_3d/output/Conv/output_bias]
+inception_v3_3d/output/Conv/output_weights (Const): [], value=Tensor<type: float shape: [10,10,10,256,2] values: [[[[-0.0478047058 -0.0902369469][0.0650431886...]]]]...>
+inception_v3_3d/output/Conv/output_weights/read (Identity): [inception_v3_3d/output/Conv/output_weights]
+inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_variance (Const): [], value=Tensor<type: float shape: [32] values: 0.541383743 1.43974364 0.371955454...>
+inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_variance/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_variance]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/add (Add): [inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_variance/read, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/add/y]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/add]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/Rsqrt, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul/y]
+inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_mean (Const): [], value=Tensor<type: float shape: [32] values: -0.133779809 0.965726674 0.00421290938...>
+inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_mean/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_mean]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_mean/read, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/sub/x, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul_2]
+inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_weights (Const): [], value=Tensor<type: float shape: [1,1,1,256,32] values: [[[[0.0858445913 -0.0304313768 -0.0415962376...]]]]...>
+inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_weights/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_weights]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_variance (Const): [], value=Tensor<type: float shape: [96] values: 9.1686573 6.53704643 6.53267336...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_variance/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_variance]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/add (Add): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_variance/read, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/add/y]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/add]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/Rsqrt, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul/y]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_mean (Const): [], value=Tensor<type: float shape: [96] values: -1.41132677 -1.87691259 -0.591107786...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_mean/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_mean]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul_2 (Mul): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_mean/read, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/sub (Sub): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/sub/x, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul_2]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_weights (Const): [], value=Tensor<type: float shape: [3,3,3,96,96] values: [[[[-0.0325848833 0.173605651 -0.128454685...]]]]...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_weights/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_weights]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_variance (Const): [], value=Tensor<type: float shape: [96] values: 6.38107777 3.85531855 5.47608376...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_variance/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_variance]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/add (Add): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_variance/read, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/add/y]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/add]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/Rsqrt, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul/y]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_mean (Const): [], value=Tensor<type: float shape: [96] values: 1.15469825 1.21325588 -3.61582923...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_mean/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_mean]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul_2 (Mul): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_mean/read, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/sub (Sub): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/sub/x, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul_2]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_weights (Const): [], value=Tensor<type: float shape: [3,3,3,64,96] values: [[[[-0.0535481349 -0.116601788 -0.119652823...]]]]...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_weights/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_weights]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_variance (Const): [], value=Tensor<type: float shape: [64] values: 0.51969713 0.693181932 0.459737629...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_variance/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_variance]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/add (Add): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_variance/read, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/add/y]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/add]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/Rsqrt, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul/y]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_mean (Const): [], value=Tensor<type: float shape: [64] values: -0.136436731 -0.403224945 -0.247256309...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_mean/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_mean]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_mean/read, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/sub/x, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul_2]
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_weights (Const): [], value=Tensor<type: float shape: [1,1,1,256,64] values: [[[[-0.0224160291 -0.136858359 -0.11067801...]]]]...>
+inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_weights/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_weights]
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_variance (Const): [], value=Tensor<type: float shape: [64] values: 18.9334164 49.6958351 20.4649487...>
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_variance/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_variance]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/add (Add): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_variance/read, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/add/y]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/add]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/Rsqrt, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul/y]
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_mean (Const): [], value=Tensor<type: float shape: [64] values: -1.39437234 3.74503732 0.510178...>
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_mean/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_mean]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul_2 (Mul): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_mean/read, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/sub (Sub): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/sub/x, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul_2]
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_weights (Const): [], value=Tensor<type: float shape: [5,5,5,48,64] values: [[[[0.124645412 0.0658800825 0.120745197...]]]]...>
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_weights/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_weights]
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_variance (Const): [], value=Tensor<type: float shape: [48] values: 0.812954307 0.762395442 0.655353546...>
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_variance/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_variance]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/add (Add): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_variance/read, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/add/y]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/add]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/Rsqrt, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul/y]
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_mean (Const): [], value=Tensor<type: float shape: [48] values: -0.383976609 -0.0998005494 -0.493173361...>
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_mean/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_mean]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_mean/read, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/sub/x, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul_2]
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_weights (Const): [], value=Tensor<type: float shape: [1,1,1,256,48] values: [[[[0.160480425 -0.0169474296 0.0322315693...]]]]...>
+inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_weights/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_weights]
+inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_variance (Const): [], value=Tensor<type: float shape: [64] values: 0.621269464 0.623318732 0.519894898...>
+inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_variance/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_variance]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/add (Add): [inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_variance/read, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/add/y]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/add]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/Rsqrt, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul/y]
+inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_mean (Const): [], value=Tensor<type: float shape: [64] values: 0.369538635 0.302170575 -0.184483692...>
+inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_mean/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_mean]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_mean/read, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/sub/x, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul_2]
+inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_weights (Const): [], value=Tensor<type: float shape: [1,1,1,256,64] values: [[[[-0.0435998 -0.0834149271 0.0211476069...]]]]...>
+inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_weights/read (Identity): [inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_weights]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_variance (Const): [], value=Tensor<type: float shape: [32] values: 1.61369526 3.34279895 0.735976636...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_variance/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_variance]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/add (Add): [inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_variance/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/add/y]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/add]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/Rsqrt, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul/y]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_mean (Const): [], value=Tensor<type: float shape: [32] values: 0.901684344 -2.15011883 -1.36036253...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_mean/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_mean]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_mean/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/sub/x, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul_2]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_weights (Const): [], value=Tensor<type: float shape: [1,1,1,192,32] values: [[[[0.0219695251 0.162310064 -0.199093759...]]]]...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_weights/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_weights]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_variance (Const): [], value=Tensor<type: float shape: [96] values: 8.18736935 7.72748 6.54306459...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_variance/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_variance]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/add (Add): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_variance/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/add/y]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/add]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/Rsqrt, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul/y]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_mean (Const): [], value=Tensor<type: float shape: [96] values: 0.192091808 0.538807631 3.06166387...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_mean/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_mean]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul_2 (Mul): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_mean/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/sub (Sub): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/sub/x, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul_2]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_weights (Const): [], value=Tensor<type: float shape: [3,3,3,96,96] values: [[[[0.0666625798 0.103367463 0.105464384...]]]]...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_weights/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_weights]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_variance (Const): [], value=Tensor<type: float shape: [96] values: 5.35068607 2.12297916 10.3197384...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_variance/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_variance]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/add (Add): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_variance/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/add/y]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/add]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/Rsqrt, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul/y]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_mean (Const): [], value=Tensor<type: float shape: [96] values: 0.84762454 -0.656417966 0.749692261...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_mean/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_mean]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul_2 (Mul): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_mean/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/sub (Sub): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/sub/x, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul_2]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_weights (Const): [], value=Tensor<type: float shape: [3,3,3,64,96] values: [[[[-0.0266894922 0.146375582 -0.0603116192...]]]]...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_weights/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_weights]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_variance (Const): [], value=Tensor<type: float shape: [64] values: 1.91908634 0.826022446 0.623631418...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_variance/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_variance]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/add (Add): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_variance/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/add/y]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/add]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/Rsqrt, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul/y]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_mean (Const): [], value=Tensor<type: float shape: [64] values: -1.57975626 1.16343331 -0.265871227...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_mean/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_mean]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_mean/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/sub/x, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul_2]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_weights (Const): [], value=Tensor<type: float shape: [1,1,1,192,64] values: [[[[-0.0466870554 0.0141446413 0.0526457429...]]]]...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_weights/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_weights]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_variance (Const): [], value=Tensor<type: float shape: [64] values: 8.80250454 39.7174454 12.6743565...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_variance/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_variance]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/add (Add): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_variance/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/add/y]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/add]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/Rsqrt, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul/y]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_mean (Const): [], value=Tensor<type: float shape: [64] values: 3.13303661 1.80902982 5.2214179...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_mean/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_mean]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul_2 (Mul): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_mean/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/sub (Sub): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/sub/x, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul_2]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_weights (Const): [], value=Tensor<type: float shape: [5,5,5,48,64] values: [[[[-0.0200909805 0.123299949 0.035635747...]]]]...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_weights/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_weights]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_variance (Const): [], value=Tensor<type: float shape: [48] values: 1.28302169 1.61641014 0.489707828...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_variance/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_variance]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/add (Add): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_variance/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/add/y]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/add]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/Rsqrt, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul/y]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_mean (Const): [], value=Tensor<type: float shape: [48] values: -0.990576208 1.31883669 -0.633630335...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_mean/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_mean]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_mean/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/sub/x, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul_2]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_weights (Const): [], value=Tensor<type: float shape: [1,1,1,192,48] values: [[[[0.0879218951 0.131149977 -0.0443727262...]]]]...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_weights/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_weights]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_variance (Const): [], value=Tensor<type: float shape: [64] values: 0.852455318 1.16172159 0.948615253...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_variance/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_variance]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/add (Add): [inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_variance/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/add/y]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/add]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/Rsqrt, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul/y]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_mean (Const): [], value=Tensor<type: float shape: [64] values: 0.245285109 -0.97997278 -0.348181814...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_mean/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_mean]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_mean/read, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/sub/x, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul_2]
+inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_weights (Const): [], value=Tensor<type: float shape: [1,1,1,192,64] values: [[[[-0.0721511319 0.0629052222 0.000900633226...]]]]...>
+inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_weights/read (Identity): [inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_weights]
+inception_v3_3d/full_conv/Conv_1/conv4_variance (Const): [], value=Tensor<type: float shape: [192] values: 5.21332693 3.11669064 2.17808366...>
+inception_v3_3d/full_conv/Conv_1/conv4_variance/read (Identity): [inception_v3_3d/full_conv/Conv_1/conv4_variance]
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/add (Add): [inception_v3_3d/full_conv/Conv_1/conv4_variance/read, inception_v3_3d_1/full_conv/Conv_1/batchnorm/add/y]
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/full_conv/Conv_1/batchnorm/add]
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul (Mul): [inception_v3_3d_1/full_conv/Conv_1/batchnorm/Rsqrt, inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul/y]
+inception_v3_3d/full_conv/Conv_1/conv4_mean (Const): [], value=Tensor<type: float shape: [192] values: -2.03897262 -1.50549197 1.20582628...>
+inception_v3_3d/full_conv/Conv_1/conv4_mean/read (Identity): [inception_v3_3d/full_conv/Conv_1/conv4_mean]
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul_2 (Mul): [inception_v3_3d/full_conv/Conv_1/conv4_mean/read, inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul]
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/sub (Sub): [inception_v3_3d_1/full_conv/Conv_1/batchnorm/sub/x, inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul_2]
+inception_v3_3d/full_conv/Conv_1/conv4_weights (Const): [], value=Tensor<type: float shape: [3,3,3,32,192] values: [[[[-0.152842119 0.0241544545 0.0626883656...]]]]...>
+inception_v3_3d/full_conv/Conv_1/conv4_weights/read (Identity): [inception_v3_3d/full_conv/Conv_1/conv4_weights]
+inception_v3_3d/full_conv/Conv/conv0_variance (Const): [], value=Tensor<type: float shape: [32] values: 0.0180228557 0.0032585992 0.0121525861...>
+inception_v3_3d/full_conv/Conv/conv0_variance/read (Identity): [inception_v3_3d/full_conv/Conv/conv0_variance]
+inception_v3_3d_1/full_conv/Conv/batchnorm/add (Add): [inception_v3_3d/full_conv/Conv/conv0_variance/read, inception_v3_3d_1/full_conv/Conv/batchnorm/add/y]
+inception_v3_3d_1/full_conv/Conv/batchnorm/Rsqrt (Rsqrt): [inception_v3_3d_1/full_conv/Conv/batchnorm/add]
+inception_v3_3d_1/full_conv/Conv/batchnorm/mul (Mul): [inception_v3_3d_1/full_conv/Conv/batchnorm/Rsqrt, inception_v3_3d_1/full_conv/Conv/batchnorm/mul/y]
+inception_v3_3d/full_conv/Conv/conv0_mean (Const): [], value=Tensor<type: float shape: [32] values: 0.0301086679 -0.00615833746 0.0236572269...>
+inception_v3_3d/full_conv/Conv/conv0_mean/read (Identity): [inception_v3_3d/full_conv/Conv/conv0_mean]
+inception_v3_3d_1/full_conv/Conv/batchnorm/mul_2 (Mul): [inception_v3_3d/full_conv/Conv/conv0_mean/read, inception_v3_3d_1/full_conv/Conv/batchnorm/mul]
+inception_v3_3d_1/full_conv/Conv/batchnorm/sub (Sub): [inception_v3_3d_1/full_conv/Conv/batchnorm/sub/x, inception_v3_3d_1/full_conv/Conv/batchnorm/mul_2]
+inception_v3_3d/full_conv/Conv/conv0_weights (Const): [], value=Tensor<type: float shape: [3,3,3,1,32] values: [[[[0.00505039562 0.110357583 0.154466957...]]]]...>
+inception_v3_3d/full_conv/Conv/conv0_weights/read (Identity): [inception_v3_3d/full_conv/Conv/conv0_weights]
+inception_v3_3d_1/full_conv/Conv/Conv3D (Conv3D): [inception_v3_3d_1/full_conv/truediv, inception_v3_3d/full_conv/Conv/conv0_weights/read]
+inception_v3_3d_1/full_conv/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/full_conv/Conv/Conv3D, inception_v3_3d_1/full_conv/Conv/batchnorm/mul]
+inception_v3_3d_1/full_conv/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/full_conv/Conv/batchnorm/mul_1, inception_v3_3d_1/full_conv/Conv/batchnorm/sub]
+inception_v3_3d_1/full_conv/Conv/Relu (Relu): [inception_v3_3d_1/full_conv/Conv/batchnorm/add_1]
+inception_v3_3d_1/full_conv/Conv_1/Conv3D (Conv3D): [inception_v3_3d_1/full_conv/Conv/Relu, inception_v3_3d/full_conv/Conv_1/conv4_weights/read]
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul_1 (Mul): [inception_v3_3d_1/full_conv/Conv_1/Conv3D, inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul]
+inception_v3_3d_1/full_conv/Conv_1/batchnorm/add_1 (Add): [inception_v3_3d_1/full_conv/Conv_1/batchnorm/mul_1, inception_v3_3d_1/full_conv/Conv_1/batchnorm/sub]
+inception_v3_3d_1/full_conv/Conv_1/Relu (Relu): [inception_v3_3d_1/full_conv/Conv_1/batchnorm/add_1]
+inception_v3_3d_1/full_conv/pool2 (MaxPool3D): [inception_v3_3d_1/full_conv/Conv_1/Relu]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/AvgPool3D (AvgPool3D): [inception_v3_3d_1/full_conv/pool2]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/Conv3D (Conv3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/AvgPool3D, inception_v3_3d/inception_1/mixed_35x35x256a/branch_pool/Conv/branch_pool_weights/read]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/Conv3D, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/mul_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/sub]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/Relu (Relu): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/batchnorm/add_1]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice (StridedSlice): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/Conv/Relu, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice/stack, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice/stack_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice/stack_2]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/Conv3D (Conv3D): [inception_v3_3d_1/full_conv/pool2, inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/branch3x3dbla_weights/read]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/Conv3D, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/mul_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/sub]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/Relu (Relu): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/batchnorm/add_1]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/Conv3D (Conv3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv/Relu, inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/branch3x3dblb_weights/read]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul_1 (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/Conv3D, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/add_1 (Add): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/mul_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/sub]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/Relu (Relu): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/batchnorm/add_1]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/Conv3D (Conv3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_1/Relu, inception_v3_3d/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/branch3x3dblc_weights/read]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul_1 (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/Conv3D, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/add_1 (Add): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/mul_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/sub]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/Relu (Relu): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/batchnorm/add_1]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/Conv3D (Conv3D): [inception_v3_3d_1/full_conv/pool2, inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv/branch5x5a_weights/read]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/Conv3D, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/mul_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/sub]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/Relu (Relu): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/batchnorm/add_1]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/Conv3D (Conv3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv/Relu, inception_v3_3d/inception_1/mixed_35x35x256a/branch5x5/Conv_1/branch5x5b_weights/read]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul_1 (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/Conv3D, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/add_1 (Add): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/mul_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/sub]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/Relu (Relu): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/batchnorm/add_1]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/Conv3D (Conv3D): [inception_v3_3d_1/full_conv/pool2, inception_v3_3d/inception_1/mixed_35x35x256a/branch1x1/Conv/branch1x1_weights/read]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/Conv3D, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/mul_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/sub]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/Relu (Relu): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/batchnorm/add_1]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice (StridedSlice): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/Conv/Relu, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice/stack, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice/stack_1, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice/stack_2]
+inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/concat (ConcatV2): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch1x1/strided_slice, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch5x5/Conv_1/Relu, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch3x3dbl/Conv_2/Relu, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/strided_slice, inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/concat/axis]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/AvgPool3D (AvgPool3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/concat]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/Conv3D (Conv3D): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/AvgPool3D, inception_v3_3d/mixed_35x35x288_0/branch_pool/Conv/branch_pool_0_weights/read]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/Conv3D, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/mul_1, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/sub]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/Relu (Relu): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/batchnorm/add_1]
+inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice (StridedSlice): [inception_v3_3d_1/mixed_35x35x288_0/branch_pool/Conv/Relu, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice/stack, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice/stack_1, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice/stack_2]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/Conv3D (Conv3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/concat, inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv/branch3x3dbl_0_weights/read]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/Conv3D, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/mul_1, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/sub]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/Relu (Relu): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/batchnorm/add_1]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/Conv3D (Conv3D): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv/Relu, inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_1/branch3x3dblb_0_weights/read]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul_1 (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/Conv3D, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/add_1 (Add): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/mul_1, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/sub]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/Relu (Relu): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/batchnorm/add_1]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/Conv3D (Conv3D): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_1/Relu, inception_v3_3d/mixed_35x35x288_0/branch3x3dbl/Conv_2/branch3x3dblc_0_weights/read]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul_1 (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/Conv3D, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/add_1 (Add): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/mul_1, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/sub]
+inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/Relu (Relu): [inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/batchnorm/add_1]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/Conv3D (Conv3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/concat, inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv/branch5x5_0_weights/read]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/Conv3D, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/mul_1, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/sub]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/Relu (Relu): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/batchnorm/add_1]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/Conv3D (Conv3D): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv/Relu, inception_v3_3d/mixed_35x35x288_0/branch5x5/Conv_1/branch5x5b_0_weights/read]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul_1 (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/Conv3D, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/add_1 (Add): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/mul_1, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/sub]
+inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/Relu (Relu): [inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/batchnorm/add_1]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/Conv3D (Conv3D): [inception_v3_3d_1/inception_1/mixed_35x35x256a/branch_pool/concat, inception_v3_3d/mixed_35x35x288_0/branch1x1/Conv/branch1x1_0_weights/read]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul_1 (Mul): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/Conv3D, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/add_1 (Add): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/mul_1, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/sub]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/Relu (Relu): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/batchnorm/add_1]
+inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice (StridedSlice): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/Conv/Relu, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice/stack, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice/stack_1, inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice/stack_2]
+inception_v3_3d_1/mixed_35x35x288_0/concat (ConcatV2): [inception_v3_3d_1/mixed_35x35x288_0/branch1x1/strided_slice, inception_v3_3d_1/mixed_35x35x288_0/branch5x5/Conv_1/Relu, inception_v3_3d_1/mixed_35x35x288_0/branch3x3dbl/Conv_2/Relu, inception_v3_3d_1/mixed_35x35x288_0/branch_pool/strided_slice, inception_v3_3d_1/mixed_35x35x288_0/concat/axis]
+inception_v3_3d_1/output/Conv/Conv3D (Conv3D): [inception_v3_3d_1/mixed_35x35x288_0/concat, inception_v3_3d/output/Conv/output_weights/read]
+inception_v3_3d_1/output/Conv/add (Add): [inception_v3_3d_1/output/Conv/Conv3D, inception_v3_3d/output/Conv/output_bias/read]
+inception_v3_3d_1/output/Conv/Relu (Relu): [inception_v3_3d_1/output/Conv/add]
+inception_v3_3d_1/output/sub (Sub): [inception_v3_3d_1/output/sub/x, inception_v3_3d_1/output/Conv/Relu]
+inception_v3_3d_1/output/Relu (Relu): [inception_v3_3d_1/output/sub]
+inception_v3_3d_1/output/sub_1 (Sub): [inception_v3_3d_1/output/sub_1/x, inception_v3_3d_1/output/Relu]

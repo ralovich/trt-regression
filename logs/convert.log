@@ -1,0 +1,95 @@
+2019-10-11 17:28:52.796413: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.6
+2019-10-11 17:28:52.798318: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.6
+WARNING:tensorflow:From convert.py:9: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2019-10-11 17:28:52.819014: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2019-10-11 17:28:53.017461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:03:00.0
+2019-10-11 17:28:53.018351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:04:00.0
+2019-10-11 17:28:53.018419: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2019-10-11 17:28:53.018454: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2019-10-11 17:28:53.019704: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2019-10-11 17:28:53.020045: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2019-10-11 17:28:53.021725: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2019-10-11 17:28:53.023077: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2019-10-11 17:28:53.023143: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2019-10-11 17:28:53.038305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2019-10-11 17:28:53.177356: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3392440000 Hz
+2019-10-11 17:28:53.181523: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5b19020 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2019-10-11 17:28:53.181573: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2019-10-11 17:28:53.736563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:03:00.0
+2019-10-11 17:28:53.737206: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:04:00.0
+2019-10-11 17:28:53.737264: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2019-10-11 17:28:53.737285: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2019-10-11 17:28:53.737302: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2019-10-11 17:28:53.737317: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2019-10-11 17:28:53.737332: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2019-10-11 17:28:53.737348: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2019-10-11 17:28:53.737362: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2019-10-11 17:28:53.739583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2019-10-11 17:28:53.739662: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2019-10-11 17:28:54.697139: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-11 17:28:54.697189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 
+2019-10-11 17:28:54.697205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N Y 
+2019-10-11 17:28:54.697213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   Y N 
+2019-10-11 17:28:54.699622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6696 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080, pci bus id: 0000:03:00.0, compute capability: 6.1)
+2019-10-11 17:28:54.721183: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 7543 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2019-10-11 17:28:54.765216: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2001c6a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2019-10-11 17:28:54.765266: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080, Compute Capability 6.1
+2019-10-11 17:28:54.765279: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce GTX 1080, Compute Capability 6.1
+WARNING:tensorflow:From convert.py:10: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2019-10-11 17:28:54.917737: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.6
+2019-10-11 17:28:55.152007: I tensorflow/core/grappler/devices.cc:55] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 2
+2019-10-11 17:28:55.161185: I tensorflow/core/grappler/clusters/single_machine.cc:356] Starting new session
+2019-10-11 17:28:55.181921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:03:00.0
+2019-10-11 17:28:55.182521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:04:00.0
+2019-10-11 17:28:55.182569: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2019-10-11 17:28:55.182589: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2019-10-11 17:28:55.182606: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2019-10-11 17:28:55.182621: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2019-10-11 17:28:55.182635: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2019-10-11 17:28:55.182650: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2019-10-11 17:28:55.182663: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2019-10-11 17:28:55.184863: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2019-10-11 17:28:55.184952: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-11 17:28:55.184968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 
+2019-10-11 17:28:55.184976: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N Y 
+2019-10-11 17:28:55.184983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   Y N 
+2019-10-11 17:28:55.186759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6696 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080, pci bus id: 0000:03:00.0, compute capability: 6.1)
+2019-10-11 17:28:55.187368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 7543 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2019-10-11 17:28:56.061593: I tensorflow/compiler/tf2tensorrt/segment/segment.cc:463] There are 4 ops of 3 different types in the graph that are not converted to TensorRT: Sub, NoOp, Placeholder, (For more information see https://docs.nvidia.com/deeplearning/frameworks/tf-trt-user-guide/index.html#supported-ops).
+2019-10-11 17:28:56.063334: I tensorflow/compiler/tf2tensorrt/convert/convert_graph.cc:634] Number of TensorRT candidate segments: 1
+2019-10-11 17:28:56.125089: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.6
+2019-10-11 17:28:56.125637: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.6
+2019-10-11 17:28:56.140792: W tensorflow/compiler/tf2tensorrt/utils/trt_logger.cc:37] DefaultLogger Setting layouts of network and plugin input/output tensors to linear, as 3D operators are found and 3D non-linear IO formats are not supported, yet.
+2019-10-11 17:29:29.207184: I tensorflow/compiler/tf2tensorrt/convert/convert_graph.cc:735] TensorRT node TRTEngineOp_0 added for segment 0 consisting of 113 nodes succeeded.
+2019-10-11 17:29:29.741632: W tensorflow/compiler/tf2tensorrt/convert/trt_optimization_pass.cc:183] TensorRTOptimizer is probably called on funcdef! This optimizer must *NOT* be called on function objects.
+2019-10-11 17:29:29.946678: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:786] Optimization results for grappler item: tf_graph
+2019-10-11 17:29:29.946715: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   constant_folding: Graph size after: 116 nodes (-210), 121 edges (-226), time = 370.51ms.
+2019-10-11 17:29:29.946723: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   layout: Graph size after: 116 nodes (0), 121 edges (0), time = 47.856ms.
+2019-10-11 17:29:29.946729: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   constant_folding: Graph size after: 116 nodes (0), 121 edges (0), time = 123.086ms.
+2019-10-11 17:29:29.946735: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   TensorRTOptimizer: Graph size after: 4 nodes (-112), 3 edges (-118), time = 33262.6367ms.
+2019-10-11 17:29:29.946740: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   constant_folding: Graph size after: 4 nodes (0), 3 edges (0), time = 12.763ms.
+2019-10-11 17:29:29.946746: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:786] Optimization results for grappler item: TRTEngineOp_0_native_segment
+2019-10-11 17:29:29.946752: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   constant_folding: Graph size after: 115 nodes (0), 120 edges (0), time = 136.652ms.
+2019-10-11 17:29:29.946758: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   layout: Graph size after: 115 nodes (0), 120 edges (0), time = 67.274ms.
+2019-10-11 17:29:29.946764: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   constant_folding: Graph size after: 115 nodes (0), 120 edges (0), time = 177.927ms.
+2019-10-11 17:29:29.946770: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   TensorRTOptimizer: Graph size after: 115 nodes (0), 120 edges (0), time = 2.681ms.
+2019-10-11 17:29:29.946776: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:788]   constant_folding: Graph size after: 115 nodes (0), 120 edges (0), time = 177.154ms.
+Exclude Node: Placeholder, input_1_100_100_100_1
+Exclude Node: Const, inception_v3_3d_1_output_sub_1_x
+Node: TRTEngineOp, TRTEngineOp_0
+Exclude Node: Sub, inception_v3_3d_1_output_sub_1
+4 ops in the final graph.
