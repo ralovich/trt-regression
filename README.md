@@ -5,9 +5,9 @@ This repository is meant to contain a dataset and scripts to reproduce
 the performance regression we have observed across TF and TF-TRT. It
 appears that running a network that processes 3D convolutions and
 pooling layers is executed faster through TF than through TF-TRT. We
-have observed this behavious on two GPUs: GTX 1080 8GB, and V100
-16GB. In our measurements the TF-TRT slowdown is around ~35%. We have
-used batchsize=1 and FP32 everywhere.
+have observed this behavious on three GPUs: GTX 1080 8GB, RTX 2080 Ti
+12GB and V100 16GB. In our measurements the TF-TRT slowdown is around
+27-44%. We have used batchsize=1 and FP32 everywhere.
 
 TensorFlow needs to built against TensorRT 6 and needs to contain at least
 [4297539768bfb6d45d3248fc6471e84e260efc6c](https://github.com/tensorflow/tensorflow/commit/4297539768bfb6d45d3248fc6471e84e260efc6c).
